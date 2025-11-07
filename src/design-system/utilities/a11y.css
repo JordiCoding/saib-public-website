@@ -1,0 +1,33 @@
+/* Accessibility Utilities */
+/* Foundation for accessibility features */
+
+/* ===== TEXT SCALING ===== */
+/* Large text mode - 25% larger */
+[data-text="large"] {
+  --text-scale: 1.25;
+}
+
+/* Extra large text mode - 50% larger */
+[data-text="xlarge"] {
+  --text-scale: 1.5;
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+/* High contrast mode - overrides colors for better readability */
+[data-contrast="high"] {
+  /* Colors will be overridden in colors.css if needed */
+  /* This is a placeholder for future implementation */
+}
+
+/* ===== REDUCED MOTION ===== */
+/* Honors user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

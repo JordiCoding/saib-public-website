@@ -1,0 +1,92 @@
+/* Font Face Declarations */
+/* This file contains ONLY @font-face rules for loading custom fonts */
+/* Font paths are relative to this file location */
+
+/* Arabic Fonts */
+
+/* Almarai - Arabic Titles */
+@font-face {
+  font-family: 'Almarai';
+  src: url('../../assets/fonts/almarai/Almarai-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('../../assets/fonts/almarai/Almarai-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('../../assets/fonts/almarai/Almarai-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('../../assets/fonts/almarai/Almarai-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Riada - Arabic Body Text */
+@font-face {
+  font-family: 'Riada';
+  src: url('../../assets/fonts/riada/Riada-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* English Fonts */
+
+/* Chap - English Titles */
+@font-face {
+  font-family: 'Chap';
+  src: url('../../assets/fonts/chap/Chap Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Jokker - English Body Text */
+@font-face {
+  font-family: 'Jokker';
+  src: url('../../assets/fonts/jokker/Jokker-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jokker';
+  src: url('../../assets/fonts/jokker/Jokker-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jokker';
+  src: url('../../assets/fonts/jokker/Jokker-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jokker';
+  src: url('../../assets/fonts/jokker/Jokker-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+

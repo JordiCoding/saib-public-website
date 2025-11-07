@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import ReusableHero from '../components/common/ReusableHero';
 import { useTypography } from '../hooks/useTypography';
+import { useLanguage } from '../hooks/useLanguage';
 
 interface PagePlaceholderProps {
   titleKey: string;
@@ -16,6 +17,7 @@ const PagePlaceholder: React.FC<PagePlaceholderProps> = ({
 }) => {
   const { t } = useTranslation();
   const { getTypographyClasses } = useTypography();
+  const { isRTL } = useLanguage(); // Ensure RTL is activated
 
   return (
     <div className="relative">
@@ -53,12 +55,43 @@ const PagePlaceholder: React.FC<PagePlaceholderProps> = ({
       {/* Coming Soon Content */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className={`text-3xl md:text-4xl mb-6 ${getTypographyClasses('title')}`}>
-            Coming Soon
+          {/* H1 Title - Production style */}
+          <h2 className="text-h1 mb-6">
+            {t('placeholder.comingSoonTest')}
+          </h2>
+          {/* Test 2: Existing working style */}
+          <h2 className="section-title mb-6">
+            {t('placeholder.comingSoonExisting')}
           </h2>
           <p className={`text-lg text-gray-600 ${getTypographyClasses('body')}`}>
-            This page is under construction. Please check back later.
+            {t('placeholder.underConstruction')}
           </p>
+          
+          {/* Body Text Test Section */}
+          <div className="mt-16 pt-16 border-t border-gray-200">
+            <h3 className="text-h1 mb-8">
+              {t('placeholder.bodyTextTitle')}
+            </h3>
+            <div className="max-w-2xl mx-auto text-left">
+              <p className="text-body-xl text-gray-700 mb-4">
+                {t('placeholder.bodyTextSample')}
+              </p>
+              <p className="text-body-xl text-gray-700">
+                {t('placeholder.bodyTextSample')}
+              </p>
+            </div>
+            
+            {/* Technical Info */}
+            <div className="mt-12 p-6 bg-gray-50 rounded-lg text-left max-w-2xl mx-auto">
+              <h4 className="text-lg font-semibold mb-4">Technical Details:</h4>
+              <div className="space-y-2 text-sm text-gray-600">
+                <p><strong>English:</strong> Jokker Light, 20px/28px (desktop), 16px/24px (mobile)</p>
+                <p><strong>Arabic:</strong> Almarai Light, 20px/28px (desktop), 16px/24px (mobile)</p>
+                <p><strong>Class:</strong> <code className="bg-gray-200 px-2 py-1 rounded">.text-body-xl</code></p>
+                <p><strong>Responsive:</strong> Mobile-first (16px default, 20px at 768px+)</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

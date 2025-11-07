@@ -1,0 +1,125 @@
+/* Typography Utilities */
+/* Semantic typography classes using CSS variables from tokens */
+
+/* ===== H1 TITLES ===== */
+/* H1 Titles - Mobile-first responsive design */
+.text-h1 {
+  /* English - Uses token variables (which reference fonts.css) */
+  font-family: var(--font-family-h1-en);
+  font-weight: var(--font-weight-h1-en);
+  
+  /* Mobile (default) */
+  font-size: calc(var(--font-size-h1-mobile-en) * var(--text-scale));
+  line-height: calc(var(--line-height-h1-mobile-en) * var(--text-scale));
+}
+
+/* Desktop (768px+) */
+@media (min-width: 768px) {
+  .text-h1 {
+    font-size: calc(var(--font-size-h1-desktop-en) * var(--text-scale));
+    line-height: calc(var(--line-height-h1-desktop-en) * var(--text-scale));
+  }
+}
+
+/* RTL/Arabic - Uses H1-specific Arabic font token (Riada) */
+html[dir="rtl"] .text-h1 {
+  font-family: var(--font-family-h1-ar);  /* Riada (H1-specific) */
+  font-weight: var(--font-weight-h1-ar);
+  
+  /* Mobile (default) */
+  font-size: calc(var(--font-size-h1-mobile-ar) * var(--text-scale));
+  line-height: calc(var(--line-height-h1-mobile-ar) * var(--text-scale));
+}
+
+/* Desktop (768px+) */
+@media (min-width: 768px) {
+  html[dir="rtl"] .text-h1 {
+    font-size: calc(var(--font-size-h1-desktop-ar) * var(--text-scale));
+    line-height: calc(var(--line-height-h1-desktop-ar) * var(--text-scale));
+  }
+}
+
+/* ===== BODY XL ===== */
+/* Body XL - Mobile-first responsive design */
+.text-body-xl {
+  /* English - Uses token variables */
+  font-family: var(--font-family-body-xl-en);
+  font-weight: var(--font-weight-body-xl-en);
+  
+  /* Mobile (default) */
+  font-size: calc(var(--font-size-body-xl-mobile-en) * var(--text-scale));
+  line-height: calc(var(--line-height-body-xl-mobile-en) * var(--text-scale));
+}
+
+/* Desktop (768px+) */
+@media (min-width: 768px) {
+  .text-body-xl {
+    font-size: calc(var(--font-size-body-xl-desktop-en) * var(--text-scale));
+    line-height: calc(var(--line-height-body-xl-desktop-en) * var(--text-scale));
+  }
+}
+
+/* RTL/Arabic - Uses Almarai for Arabic body text */
+html[dir="rtl"] .text-body-xl {
+  font-family: var(--font-family-body-xl-ar);  /* Almarai */
+  font-weight: var(--font-weight-body-xl-ar);
+  
+  /* Mobile (default) */
+  font-size: calc(var(--font-size-body-xl-mobile-ar) * var(--text-scale));
+  line-height: calc(var(--line-height-body-xl-mobile-ar) * var(--text-scale));
+}
+
+/* Desktop (768px+) */
+@media (min-width: 768px) {
+  html[dir="rtl"] .text-body-xl {
+    font-size: calc(var(--font-size-body-xl-desktop-ar) * var(--text-scale));
+    line-height: calc(var(--line-height-body-xl-desktop-ar) * var(--text-scale));
+  }
+}
+
+/* ===== LEGACY FONT CLASSES (Preserved for compatibility) ===== */
+/* Language-specific font classes */
+.font-title-ar {
+  font-family: var(--font-arabic-title);
+}
+
+.font-body-ar {
+  font-family: var(--font-arabic-body);
+}
+
+.font-title-en {
+  font-family: var(--font-english-title);
+}
+
+.font-body-en {
+  font-family: var(--font-english-body);
+}
+
+/* ===== LEGACY TYPOGRAPHY CLASSES (Preserved for compatibility) ===== */
+/* Custom Typography Classes */
+.subtitle-hero {
+  font-size: 18px; /* text-lg */
+  line-height: 1.4;
+  font-weight: 300; /* light */
+  font-family: var(--font-english-body);
+}
+
+@media (min-width: 768px) {
+  .subtitle-hero {
+    font-size: 20px; /* md:text-xl */
+  }
+}
+
+.subtitle-hero-ar {
+  font-size: 18px; /* text-lg */
+  line-height: 1.4;
+  font-weight: 300; /* light for Arabic */
+  font-family: var(--font-arabic-body);
+}
+
+@media (min-width: 768px) {
+  .subtitle-hero-ar {
+    font-size: 20px; /* md:text-xl */
+  }
+}
+

@@ -1,0 +1,67 @@
+/* Typography Tokens */
+/* Base values for typography - references fonts.css variables */
+
+:root {
+  /* ===== FONT FAMILY TOKENS (Base font families) ===== */
+  /* These define the font families used throughout the system */
+  --font-arabic-title: 'Almarai', 'Arial', sans-serif;
+  --font-arabic-body: 'Riada', 'Arial', sans-serif;
+  --font-english-title: 'Chap', 'Arial', sans-serif;
+  --font-english-body: 'Jokker', 'Arial', sans-serif;
+  
+  /* ===== GENERAL FONT TOKENS (Reference base fonts) ===== */
+  /* These reference the base font families above */
+  --font-heading: var(--font-english-title);  /* Chap for English */
+  --font-body: var(--font-english-body);      /* Jokker for English */
+  
+  /* ===== H1 TOKENS ===== */
+  /* English */
+  --font-size-h1-mobile-en: 32px;   /* Mobile - ~73% of desktop (best practice: 70-80%) */
+  --font-size-h1-desktop-en: 44px;  /* Desktop */
+  --line-height-h1-mobile-en: 40px; /* Mobile - 1.25 ratio (maintains readability) */
+  --line-height-h1-desktop-en: 56px; /* Desktop */
+  --font-weight-h1-en: 300;
+  --font-family-h1-en: var(--font-english-title);  /* Chap */
+  
+  /* Arabic - H1 uses Riada (not Almarai) per user spec */
+  --font-size-h1-mobile-ar: 32px;   /* Mobile - ~73% of desktop (best practice: 70-80%) */
+  --font-size-h1-desktop-ar: 44px;  /* Desktop */
+  --line-height-h1-mobile-ar: 48px; /* Mobile - 1.5 ratio (maintains Arabic readability) */
+  --line-height-h1-desktop-ar: 72px; /* Desktop */
+  --font-weight-h1-ar: 300;
+  --font-family-h1-ar: var(--font-arabic-body);  /* Riada (not Almarai) */
+  
+  /* ===== BODY XL TOKENS ===== */
+  /* English */
+  --font-size-body-xl-mobile-en: 16px;   /* Mobile - 80% of desktop (best practice: 16px standard for mobile body) */
+  --font-size-body-xl-desktop-en: 20px;   /* Desktop */
+  --line-height-body-xl-mobile-en: 24px;  /* Mobile - 1.5 ratio */
+  --line-height-body-xl-desktop-en: 28px; /* Desktop */
+  --font-weight-body-xl-en: 300;          /* Light */
+  --font-family-body-xl-en: var(--font-english-body);  /* Jokker */
+  
+  /* Arabic */
+  --font-size-body-xl-mobile-ar: 16px;   /* Mobile - 80% of desktop */
+  --font-size-body-xl-desktop-ar: 20px;  /* Desktop */
+  --line-height-body-xl-mobile-ar: 24px; /* Mobile - 1.5 ratio */
+  --line-height-body-xl-desktop-ar: 28px; /* Desktop */
+  --font-weight-body-xl-ar: 300;         /* Light */
+  --font-family-body-xl-ar: var(--font-arabic-title);  /* Almarai */
+  
+  /* ===== ACCESSIBILITY FOUNDATION ===== */
+  /* Text scaling multiplier (default: 1 = 100%) */
+  --text-scale: 1;
+  
+  /* Spacing scale multiplier (for future use) */
+  --spacing-scale: 1;
+  
+  /* Custom Breakpoints */
+  --screens-xs: 475px;
+}
+
+/* RTL/Arabic Support - Override font tokens for Arabic */
+html[dir="rtl"] {
+  --font-heading: var(--font-arabic-title);   /* Almarai/Riada for Arabic */
+  --font-body: var(--font-arabic-body);       /* Riada for Arabic */
+}
+

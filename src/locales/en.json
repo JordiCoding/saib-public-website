@@ -119,5 +119,13 @@
   "leadCapture": {
     "fullNamePlaceholder": "Full name",
     "mobileNumberPlaceholder": "Mobile number"
+  },
+  "placeholder": {
+    "comingSoon": "Coming Soon",
+    "comingSoonTest": "Coming Soon (New Test Class Only)",
+    "comingSoonExisting": "Coming Soon (Existing section-title)",
+    "underConstruction": "This page is under construction. Please check back later.",
+    "bodyTextSample": "This is a sample body text using the new .text-body class. It demonstrates Jokker Light font at 20px size with 28px line-height on desktop, and 16px size with 24px line-height on mobile devices. The text scales responsively and switches fonts automatically when switching between English and Arabic languages.",
+    "bodyTextTitle": "Body Text Sample"
   }
 }

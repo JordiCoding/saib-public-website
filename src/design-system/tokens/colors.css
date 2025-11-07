@@ -1,0 +1,55 @@
+:root {
+  /* ===== FIGMA DESIGN TOKENS ===== */
+  
+  /* Text Colors */
+  --color-text-primary: #1A1C1E;      /* Main text color */
+  --color-text-secondary: #A44F17;    /* Accent text */
+  --color-text-tertiary: #FADD96;     /* Highlight text */
+  --color-text-neutral: #FFFFFF;      /* White text */
+
+  /* Button Colors */
+  --color-button-primary: #FADD96;
+  --color-button-secondary: #FFFFFF;
+
+  /* Background Colors */
+  --color-bg-screen: #FCFBF8;         /* Page background */
+  --color-bg-card: #FFFFFF;            /* Card background */
+
+  /* Icon Colors */
+  --color-icon-primary: #1A1C1E;
+  --color-icon-secondary: #707070;
+  --color-icon-placeholder: #C1C1C1;
+  --color-icon-white: #FFFFFF;
+
+  /* Tab Colors */
+  --color-tab-active: #A44F17;
+
+  /* Border Colors */
+  --color-border-divider: #A7A7A7;
+  --color-border-tabs-outline: #DFD5CA;
+  --color-border-button-outline: #DFD5CA;  /* Base color */
+  --color-border-button-outline-opacity: rgba(223, 213, 202, 0.5);  /* 50% opacity version */
+  --color-border-button-outline2: #FFFFFF;
+
+  /* ===== LEGACY TOKENS (Backward Compatibility) ===== */
+  
+  /* ICAP Brand Colors */
+  --color-icap-primary: #0A2D45;
+  --color-icap-secondary: #114972;
+  --color-icap-accent: #A44F17;       /* Same as text-secondary, tab-active */
+  --color-icap-gold: #EECA60;
+
+  /* Brand Colors */
+  --color-brand-dark: #221200;
+  --color-brand-dark-nav: #1D1306;
+  --color-text-dark: #1A1C1E;         /* Same as text-primary */
+  --color-text-gray: #232323;
+  --color-bg-light: #FBF7F1;
+  --color-bg-beige: #F0E1BC;
+  --color-bg-yellow: #F2D794;
+  --color-bg-yellow-dark: #D0A457;
+
+  /* Utility Colors */
+  --color-placeholder-bg: #BEBEBE;    /* Similar to icon-placeholder (#C1C1C1) */
+}
+
