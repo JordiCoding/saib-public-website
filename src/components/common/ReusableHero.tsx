@@ -259,7 +259,7 @@ const ReusableHero: React.FC<HeroProps> = ({
               i18nKey={title}
               components={[
                 <br />, // <0/> - line break
-                <span className="text-[#A44F17]" />, // <1> - colored text
+                <span className="text-icap-accent" />, // <1> - colored text
               ]}
             />
           </MotionTitle>

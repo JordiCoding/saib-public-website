@@ -120,13 +120,13 @@ export function MutualFundSlider() {
     <div className="max-w-[1062px] mx-auto px-6">
       {/* Section Title and Subtitle */}
       <div className="text-center mb-12">
-        {/* Title: 'Grow' in #A44F17, rest black */}
+        {/* Title: 'Grow' in accent color, rest black */}
         <h2 className={`text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[1.2] tracking-tight ${getTypographyClasses('title')}`}
             style={{ color: 'black' }}>
           {/* Split the title so 'Grow' is colored */}
           {data.title.startsWith('Grow') ? (
             <>
-              <span style={{ color: '#A44F17' }}>Grow</span>
+              <span className="text-icap-accent">Grow</span>
               {data.title.slice(4)}
             </>
           ) : (
@@ -202,7 +202,7 @@ export function MutualFundSlider() {
                     disabled={Math.floor(currentSlide / 3) >= maxSlide}
                     className={`
                       w-12 h-12 rounded-full flex items-center justify-center
-                      bg-gradient-to-r from-[#F2D794] to-[#D0A457] text-black
+                      bg-gradient-to-r from-bg-yellow to-bg-yellow-dark text-black
                       hover:opacity-90 disabled:opacity-50
                       transition-all duration-200
                     `}
@@ -301,7 +301,7 @@ export function MutualFundSlider() {
                 disabled={Math.floor(currentSlide / 3) >= maxSlide}
                 className={`
                   w-12 h-12 rounded-full flex items-center justify-center
-                  bg-gradient-to-r from-[#F2D794] to-[#D0A457] text-black
+                  bg-gradient-to-r from-bg-yellow to-bg-yellow-dark text-black
                   hover:opacity-90 disabled:opacity-50
                   transition-all duration-200
                 `}

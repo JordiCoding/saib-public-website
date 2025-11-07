@@ -26,7 +26,7 @@ const NavigationCardSection: React.FC<NavigationCardSectionProps> = ({
   size = 'md',
   className = '',
   backgroundImage,
-  titleTransComponents = [<span className="text-[#A44F17]" key="highlight" />],
+  titleTransComponents = [<span className="text-icap-accent" key="highlight" />],
   showControls = false,
   onLayoutChange,
   currentLayout
@@ -87,7 +87,7 @@ const NavigationCardSection: React.FC<NavigationCardSectionProps> = ({
                 onClick={() => onLayoutChange(key)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   currentLayout === key
-                    ? 'bg-[#A44F17] text-white'
+                    ? 'bg-icap-accent text-white'
                     : 'bg-gray-700 text-white hover:bg-gray-600'
                 }`}
               >

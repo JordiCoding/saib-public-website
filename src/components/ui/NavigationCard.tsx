@@ -135,11 +135,11 @@ const NavigationCard: React.FC<NavigationCardProps> = ({
         
         {/* Arrow Button */}
         <button 
-          className={`${config.arrowSize} bg-[#F2D794] rounded-lg flex items-center justify-center`}
+          className={`${config.arrowSize} bg-bg-yellow rounded-lg flex items-center justify-center`}
           disabled={disabled}
         >
           <svg 
-            className={`${config.iconSize} text-[#1D1306]`} 
+            className={`${config.iconSize} text-brand-dark-nav`} 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"

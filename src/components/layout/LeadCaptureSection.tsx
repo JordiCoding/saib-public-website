@@ -83,13 +83,13 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
           style={{ lineHeight: 1.2 }}
         >
           {beforeAccent.join(' ')}{' '}
-          <span className="text-[#A44F17]">{accentWords.join(' ')}</span>
+          <span className="text-icap-accent">{accentWords.join(' ')}</span>
           {afterAccent.length > 0 && ' ' + afterAccent.join(' ')}
         </h2>
 
         {/* Subtitle */}
         <p 
-          className={`text-lg md:text-xl text-center mb-12 text-[#232323] ${getTypographyClasses('body')}`}
+          className={`text-lg md:text-xl text-center mb-12 text-text-gray ${getTypographyClasses('body')}`}
           style={{ lineHeight: 1.6 }}
         >
           {t(subtitle)}

@@ -24,11 +24,11 @@ const Button = <C extends React.ElementType = 'button'>({
   const baseStyles = `inline-block px-8 py-4 transition-colors text-center ${getTypographyClasses('button')}`;
 
   const variantStyles = {
-    primary: 'rounded-[16px] bg-[#A44F17] text-white hover:opacity-90',
+    primary: 'rounded-[16px] bg-icap-accent text-white hover:opacity-90',
     secondary: 'rounded-[32px] bg-transparent border border-white text-white hover:bg-white hover:text-icap-primary',
     black: 'rounded-[32px] bg-black text-white hover:bg-gray-800',
     white: 'rounded-[32px] bg-white text-icap-primary hover:bg-gray-100',
-    'open-account': 'rounded-[16px] bg-[#F0E1BC] border border-white text-black hover:opacity-90',
+    'open-account': 'rounded-[16px] bg-bg-beige border border-white text-black hover:opacity-90',
     'log-in': 'rounded-[16px] bg-white/20 border border-white/50 text-black hover:opacity-90',
   };
 

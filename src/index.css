@@ -12,6 +12,16 @@
   --color-icap-accent: #A44F17;
   --color-icap-gold: #EECA60;
 
+  /* Brand Colors */
+  --color-brand-dark: #221200;
+  --color-brand-dark-nav: #1D1306;
+  --color-text-dark: #1A1C1E;
+  --color-text-gray: #232323;
+  --color-bg-light: #FBF7F1;
+  --color-bg-beige: #F0E1BC;
+  --color-bg-yellow: #F2D794;
+  --color-bg-yellow-dark: #D0A457;
+
   --color-placeholder-bg: #BEBEBE;
 
   --screens-xs: 475px;
@@ -24,22 +34,6 @@ html {
 
 html[dir="rtl"] {
   font-family: var(--font-family-arabic);
-}
-
-/* Custom Font Classes for Typography System */
-.font-jokker-light {
-  font-family: 'Jokker', sans-serif;
-  font-weight: 300;
-}
-
-.font-jokker-regular {
-  font-family: 'Jokker', sans-serif;
-  font-weight: 400;
-}
-
-.font-jokker-semibold {
-  font-family: 'Jokker', sans-serif;
-  font-weight: 600;
 }
 
 /* Glassmorphism Card Styles */
@@ -77,7 +71,7 @@ html[dir="rtl"] {
 }
 
 .flat-card .card-title {
-  color: #A44F17 !important;
+  color: var(--color-icap-accent) !important;
 }
 
 .flat-card .card-subtitle {
@@ -85,7 +79,7 @@ html[dir="rtl"] {
 }
 
 .flat-card .card-button {
-  color: #A44F17;
+  color: var(--color-icap-accent);
 }
 
 /* Card Content Typography Classes */
@@ -122,34 +116,6 @@ html[dir="rtl"] {
   @apply text-[22px] opacity-80;
   font-family: "Jokker", sans-serif;
   font-weight: 300;
-}
-
-.section-container {
-  @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-}
-
-/* Slide Title Typography Classes */
-.slide-title {
-  @apply text-[52px] font-light mb-4;
-  font-family: "Chap", sans-serif;
-}
-
-.slide-title-highlight {
-  color: #FADD96;
-}
-
-.slide-subtitle {
-  @apply text-[22px];
-  font-family: "Jokker", sans-serif;
-}
-
-/* Arabic Slide Title Typography Classes */
-html[dir="rtl"] .slide-title {
-  font-family: "Almarai", sans-serif;
-}
-
-html[dir="rtl"] .slide-subtitle {
-  font-family: "Riada", sans-serif;
 }
 
 /* Arabic Section Typography Classes */
@@ -191,60 +157,6 @@ html[dir="rtl"] .navigation-card-subtitle {
   font-family: "Riada", sans-serif;
 }
 
-/* GCC Regional Section Styles */
-.gcc-country-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  width: 210px;
-  height: 80px;
-  padding: 0 20px;
-  background-color: #FBF7F1;
-  border: 1px solid #F2EFED;
-  border-radius: 20px;
-}
-
-.gcc-country-text {
-  font-family: 'Chap', sans-serif;
-  font-size: 20px;
-  color: #000000;
-  font-weight: 300;
-}
-
-.gcc-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 24px;
-  row-gap: 32px;
-  justify-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-@media (min-width: 640px) {
-  .gcc-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-    row-gap: 36px;
-  }
-}
-
-@media (min-width: 768px) {
-  .gcc-cards-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    row-gap: 40px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .gcc-cards-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 36px;
-    row-gap: 44px;
-  }
-}
-
 /* Lead Capture Input Styles */
 .lead-capture-input {
   width: 512px;
@@ -267,7 +179,7 @@ html[dir="rtl"] .navigation-card-subtitle {
 
 .lead-capture-input:focus {
   outline: none;
-  box-shadow: 0 4px 32px 0 rgba(94, 45, 0, 0.04), 0 0 0 2px #A44F17;
+  box-shadow: 0 4px 32px 0 rgba(94, 45, 0, 0.04), 0 0 0 2px var(--color-icap-accent);
 }
 
 /* Responsive adjustments for lead capture inputs */

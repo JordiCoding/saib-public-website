@@ -70,7 +70,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-[#1D1306] z-50 md:hidden">
+    <div className="fixed inset-0 bg-brand-dark-nav z-50 md:hidden">
       {/* Close Button - Top Right */}
       <button
         onClick={onClose}

@@ -288,7 +288,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
                       disabled={Math.floor(currentSlide / (slidesPerView.desktop || 3)) >= Math.ceil(items.length / (slidesPerView.desktop || 3)) - 1}
                       className={`
                         w-12 h-12 rounded-full flex items-center justify-center
-                        bg-gradient-to-r from-[#F2D794] to-[#D0A457] text-black
+                        bg-gradient-to-r from-bg-yellow to-bg-yellow-dark text-black
                         hover:opacity-90 disabled:opacity-50
                         transition-all duration-200
                       `}
@@ -388,7 +388,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
                       disabled={Math.floor(currentSlide / (slidesPerView.desktop || 3)) >= Math.ceil(items.length / (slidesPerView.desktop || 3)) - 1}
                       className={`
                         w-12 h-12 rounded-full flex items-center justify-center
-                        bg-gradient-to-r from-[#F2D794] to-[#D0A457] text-black
+                        bg-gradient-to-r from-bg-yellow to-bg-yellow-dark text-black
                         hover:opacity-90 disabled:opacity-50
                         transition-all duration-200
                       `}
@@ -422,7 +422,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
 
   return (
     <section 
-      className={`relative bg-[#221200] py-[150px] md:py-[200px] overflow-hidden ${className}`}
+      className={`relative bg-brand-dark py-[150px] md:py-[200px] overflow-hidden ${className}`}
     >
       {/* Background Image */}
       <div 

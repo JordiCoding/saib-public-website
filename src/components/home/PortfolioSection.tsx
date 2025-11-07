@@ -50,7 +50,7 @@ const PortfolioSection: React.FC = () => {
           >
             <div className="flex flex-col gap-6 text-center items-center lg:text-right lg:items-end rtl:lg:items-start">
               <h2 className={`text-4xl lg:text-5xl font-bold text-icap-primary ${getTypographyClasses('title')}`}>
-                <span className="block text-[#A44F17]">
+                <span className="block text-icap-accent">
                   {t('portfolio.preTitle')}
                 </span>
                 {t('portfolio.title')}
