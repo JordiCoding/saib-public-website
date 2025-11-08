@@ -1,0 +1,70 @@
+/* Typography Tokens - Shared scales */
+
+:root {
+  /* ===== FONT FAMILIES ===== */
+  /* Language-specific base families */
+  --font-family-en-heading: 'Chap', 'Arial', sans-serif;
+  --font-family-en-body: 'Jokker', 'Arial', sans-serif;
+
+  --font-family-ar-heading: 'Riada', 'Arial', sans-serif;
+  --font-family-ar-body: 'Almarai', 'Arial', sans-serif;
+
+  /* Default assignments (English) */
+  --font-family-heading: var(--font-family-en-heading);
+  --font-family-body: var(--font-family-en-body);
+
+  /* ===== FONT WEIGHTS ===== */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+
+  /* ===== DESKTOP SCALE ===== */
+  --font-size-desktop-xxl: 44px;   /* e.g. Display/H1 */
+  --line-height-desktop-xxl: 56px;
+
+  --font-size-desktop-xl: 24px;    /* e.g. Heading (H5) */
+  --line-height-desktop-xl: 36px;
+
+  --font-size-desktop-lg: 20px;    /* e.g. Body XL */
+  --line-height-desktop-lg: 28px;
+
+  --font-size-desktop-md: 16px;    /* e.g. Body L */
+  --line-height-desktop-md: 22px;
+
+  /* ===== MOBILE SCALE ===== */
+  --font-size-mobile-xxl: 32px;
+  --line-height-mobile-xxl: 40px;
+
+  --font-size-mobile-xl: 20px;
+  --line-height-mobile-xl: 30px;
+
+  --font-size-mobile-lg: 16px;
+  --line-height-mobile-lg: 24px;
+
+  --font-size-mobile-md: 14px;
+  --line-height-mobile-md: 20px;
+
+  /* ===== ACCESSIBILITY FOUNDATION ===== */
+  --text-scale: 1;     /* Text scaling multiplier */
+  --spacing-scale: 1;  /* Future use */
+
+  /* ===== CUSTOM BREAKPOINTS ===== */
+  --screens-xs: 475px;
+}
+
+/* RTL overrides */
+html[dir="rtl"] {
+  /* Switch to Arabic font families */
+  --font-family-heading: var(--font-family-ar-heading);
+  --font-family-body: var(--font-family-ar-body);
+
+  /* Adjust key line heights for Arabic readability */
+  --line-height-desktop-xxl: 72px; /* Display/H1 */
+  --line-height-mobile-xxl: 48px;
+
+  --line-height-mobile-xl: 32px;   /* Heading scale */
+
+  /* Body L mobile adjustments */
+  --font-size-mobile-md: 12px;
+  --line-height-mobile-md: 18px;
+}
+

@@ -1,13 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');
-@import './design-system/assets/fonts.css';  /* Step 1: @font-face only */
+/* ============================================
+   NEW DESIGN SYSTEM IMPORTS
+   ============================================ */
+@import './design-system/assets/fonts.css';
 @import './design-system/tokens/colors.css';
-@import './design-system/tokens/typography.css';
+@import './design-system/tokens/typography-scales.css';
 @import './design-system/utilities/typography.css';
 @import './design-system/utilities/a11y.css';
 @import "tailwindcss";
 
+/* ============================================
+   TAILWIND THEME CONFIGURATION
+   ============================================ */
+/* Note: This @theme block is for Tailwind-specific mappings only */
+/* Color tokens are defined in tokens/colors.css */
 @theme {
-  /* Color tokens - values from tokens/colors.css */
+  /* Custom Breakpoints */
+  --screens-xs: 475px;
+  
+  /* Legacy color mappings for Tailwind classes (kept for backward compatibility) */
+  /* TODO: Migrate components to use design system tokens directly */
   --color-icap-primary: #0A2D45;
   --color-icap-secondary: #114972;
   --color-icap-accent: #A44F17;
@@ -21,41 +32,25 @@
   --color-bg-yellow: #F2D794;
   --color-bg-yellow-dark: #D0A457;
   --color-placeholder-bg: #BEBEBE;
-
-  /* Figma Design Tokens */
-  --color-text-primary: #1A1C1E;
-  --color-text-secondary: #A44F17;
-  --color-text-tertiary: #FADD96;
-  --color-text-neutral: #FFFFFF;
-  --color-button-primary: #FADD96;
-  --color-button-secondary: #FFFFFF;
-  --color-bg-screen: #FCFBF8;
-  --color-bg-card: #FFFFFF;
-  --color-icon-primary: #1A1C1E;
-  --color-icon-secondary: #707070;
-  --color-icon-placeholder: #C1C1C1;
-  --color-icon-white: #FFFFFF;
-  --color-tab-active: #A44F17;
-  --color-border-divider: #A7A7A7;
-  --color-border-tabs-outline: #DFD5CA;
-  --color-border-button-outline: #DFD5CA;
-  --color-border-button-outline-opacity: rgba(223, 213, 202, 0.5);
-  --color-border-button-outline2: #FFFFFF;
-
-  /* Typography tokens - values from tokens/typography.css */
-  --font-family-sans: "Inter", system-ui, sans-serif;
-  --font-family-arabic: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
-  --screens-xs: 475px;
 }
 
-/* Custom base styles */
+/* ============================================
+   BASE STYLES (Using Design System Tokens)
+   ============================================ */
 html {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-body);
 }
 
 html[dir="rtl"] {
-  font-family: var(--font-family-arabic);
+  font-family: var(--font-family-body);
 }
+
+/* ============================================
+   LEGACY COMPONENT STYLES
+   ============================================ */
+/* TODO: These styles are still being used by components */
+/* TODO: Migrate to design system when components are refactored */
+/* Components using these: GridCard, FeatureCard, NavigationCard, InputField, PagePlaceholder */
 
 /* Glassmorphism Card Styles */
 .glassmorphism-card {

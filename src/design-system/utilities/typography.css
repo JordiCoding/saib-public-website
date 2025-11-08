@@ -4,95 +4,102 @@
 /* ===== H1 TITLES ===== */
 /* H1 Titles - Mobile-first responsive design */
 .text-h1 {
-  /* English - Uses token variables (which reference fonts.css) */
-  font-family: var(--font-family-h1-en);
-  font-weight: var(--font-weight-h1-en);
-  
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-light);
+
   /* Mobile (default) */
-  font-size: calc(var(--font-size-h1-mobile-en) * var(--text-scale));
-  line-height: calc(var(--line-height-h1-mobile-en) * var(--text-scale));
+  font-size: calc(var(--font-size-mobile-xxl) * var(--text-scale));
+  line-height: calc(var(--line-height-mobile-xxl) * var(--text-scale));
 }
 
 /* Desktop (768px+) */
 @media (min-width: 768px) {
   .text-h1 {
-    font-size: calc(var(--font-size-h1-desktop-en) * var(--text-scale));
-    line-height: calc(var(--line-height-h1-desktop-en) * var(--text-scale));
+    font-size: calc(var(--font-size-desktop-xxl) * var(--text-scale));
+    line-height: calc(var(--line-height-desktop-xxl) * var(--text-scale));
   }
 }
 
-/* RTL/Arabic - Uses H1-specific Arabic font token (Riada) */
-html[dir="rtl"] .text-h1 {
-  font-family: var(--font-family-h1-ar);  /* Riada (H1-specific) */
-  font-weight: var(--font-weight-h1-ar);
+/* ===== H5 TITLES ===== */
+/* H5 Titles - Mobile-first responsive design */
+.text-h5 {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
   
   /* Mobile (default) */
-  font-size: calc(var(--font-size-h1-mobile-ar) * var(--text-scale));
-  line-height: calc(var(--line-height-h1-mobile-ar) * var(--text-scale));
+  font-size: calc(var(--font-size-mobile-xl) * var(--text-scale));
+  line-height: calc(var(--line-height-mobile-xl) * var(--text-scale));
 }
 
 /* Desktop (768px+) */
 @media (min-width: 768px) {
-  html[dir="rtl"] .text-h1 {
-    font-size: calc(var(--font-size-h1-desktop-ar) * var(--text-scale));
-    line-height: calc(var(--line-height-h1-desktop-ar) * var(--text-scale));
+  .text-h5 {
+    font-size: calc(var(--font-size-desktop-xl) * var(--text-scale));
+    line-height: calc(var(--line-height-desktop-xl) * var(--text-scale));
   }
+}
+
+html[dir="rtl"] .text-h5 {
+  font-weight: var(--font-weight-regular);
 }
 
 /* ===== BODY XL ===== */
 /* Body XL - Mobile-first responsive design */
 .text-body-xl {
-  /* English - Uses token variables */
-  font-family: var(--font-family-body-xl-en);
-  font-weight: var(--font-weight-body-xl-en);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
   
   /* Mobile (default) */
-  font-size: calc(var(--font-size-body-xl-mobile-en) * var(--text-scale));
-  line-height: calc(var(--line-height-body-xl-mobile-en) * var(--text-scale));
+  font-size: calc(var(--font-size-mobile-lg) * var(--text-scale));
+  line-height: calc(var(--line-height-mobile-lg) * var(--text-scale));
 }
 
 /* Desktop (768px+) */
 @media (min-width: 768px) {
   .text-body-xl {
-    font-size: calc(var(--font-size-body-xl-desktop-en) * var(--text-scale));
-    line-height: calc(var(--line-height-body-xl-desktop-en) * var(--text-scale));
+    font-size: calc(var(--font-size-desktop-lg) * var(--text-scale));
+    line-height: calc(var(--line-height-desktop-lg) * var(--text-scale));
   }
 }
 
-/* RTL/Arabic - Uses Almarai for Arabic body text */
-html[dir="rtl"] .text-body-xl {
-  font-family: var(--font-family-body-xl-ar);  /* Almarai */
-  font-weight: var(--font-weight-body-xl-ar);
+/* ===== BODY L ===== */
+/* Body L - Mobile-first responsive design */
+.text-body-l {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
   
   /* Mobile (default) */
-  font-size: calc(var(--font-size-body-xl-mobile-ar) * var(--text-scale));
-  line-height: calc(var(--line-height-body-xl-mobile-ar) * var(--text-scale));
+  font-size: calc(var(--font-size-mobile-md) * var(--text-scale));
+  line-height: calc(var(--line-height-mobile-md) * var(--text-scale));
 }
 
 /* Desktop (768px+) */
 @media (min-width: 768px) {
-  html[dir="rtl"] .text-body-xl {
-    font-size: calc(var(--font-size-body-xl-desktop-ar) * var(--text-scale));
-    line-height: calc(var(--line-height-body-xl-desktop-ar) * var(--text-scale));
+  .text-body-l {
+    font-size: calc(var(--font-size-desktop-md) * var(--text-scale));
+    line-height: calc(var(--line-height-desktop-md) * var(--text-scale));
   }
 }
 
-/* ===== LEGACY FONT CLASSES (Preserved for compatibility) ===== */
+html[dir="rtl"] .text-body-l {
+  font-weight: var(--font-weight-regular);
+}
+
 /* Language-specific font classes */
 .font-title-ar {
-  font-family: var(--font-arabic-title);
+  font-family: var(--font-family-ar-heading);
 }
 
 .font-body-ar {
-  font-family: var(--font-arabic-body);
+  font-family: var(--font-family-ar-body);
 }
 
 .font-title-en {
-  font-family: var(--font-english-title);
+  font-family: var(--font-family-en-heading);
 }
 
 .font-body-en {
-  font-family: var(--font-english-body);
+  font-family: var(--font-family-en-body);
 }
 
 /* ===== LEGACY TYPOGRAPHY CLASSES (Preserved for compatibility) ===== */
@@ -101,7 +108,7 @@ html[dir="rtl"] .text-body-xl {
   font-size: 18px; /* text-lg */
   line-height: 1.4;
   font-weight: 300; /* light */
-  font-family: var(--font-english-body);
+  font-family: var(--font-family-en-body);
 }
 
 @media (min-width: 768px) {
@@ -114,7 +121,7 @@ html[dir="rtl"] .text-body-xl {
   font-size: 18px; /* text-lg */
   line-height: 1.4;
   font-weight: 300; /* light for Arabic */
-  font-family: var(--font-arabic-body);
+  font-family: var(--font-family-ar-body);
 }
 
 @media (min-width: 768px) {
@@ -122,4 +129,5 @@ html[dir="rtl"] .text-body-xl {
     font-size: 20px; /* md:text-xl */
   }
 }
+
 
