@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { useTypography } from '../../hooks/useTypography';
 
-type ButtonVariant = 'primary' | 'secondary' | 'black' | 'white' | 'open-account' | 'log-in';
+export type ButtonVariant = 'primary' | 'secondary' | 'black' | 'white' | 'open-account' | 'log-in';
 
 interface ButtonProps<C extends React.ElementType = 'button'> {
   as?: C;

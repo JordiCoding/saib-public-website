@@ -62,6 +62,25 @@ html[dir="rtl"] .text-h5 {
   }
 }
 
+/* ===== BODY ===== */
+/* Standard body text */
+.text-body {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+  
+  /* Mobile (default) */
+  font-size: calc(var(--font-size-mobile-lg) * var(--text-scale));
+  line-height: calc(var(--line-height-mobile-lg) * var(--text-scale));
+}
+
+/* Desktop (768px+) */
+@media (min-width: 768px) {
+  .text-body {
+    font-size: calc(var(--font-size-desktop-md) * var(--text-scale));
+    line-height: calc(var(--line-height-desktop-lg) * var(--text-scale));
+  }
+}
+
 /* ===== BODY L ===== */
 /* Body L - Mobile-first responsive design */
 .text-body-l {

@@ -130,6 +130,12 @@
     "bodyLTextSample": "This is a sample of Body L text using the new .text-body-l class. It demonstrates Jokker Light font at 16px size with 22px line-height on desktop, and 14px size with 20px line-height on mobile devices. This style is perfect for smaller body text that needs to remain readable while taking up less space.",
     "bodyLTextTitle": "Body L Text Sample",
     "h5TextSample": "This is a sample heading using the new .text-h5 class. It applies Jokker Light at 24px size with 36px line-height on desktop, and scales down to 20px/30px on mobile for readability while still switching automatically between English and Arabic fonts.",
-    "h5TextTitle": "H5 Heading Sample"
+    "h5TextTitle": "H5 Heading Sample",
+    "slideTitleBefore": "Bank easily with our",
+    "slideTitleHighlight": "Current Account",
+    "slideDescription": "Enjoy seamless banking with no minimum balance, free debit card and cheque book, and tailored statements.",
+    "slideCta": "Learn More",
+    "slideCtaAria": "Learn more about the current account",
+    "slideImageAlt": "Illustration of a bank card and gold coins representing a current account"
   }
 }

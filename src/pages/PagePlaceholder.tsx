@@ -3,6 +3,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import ReusableHero from '../components/common/ReusableHero';
 import { useTypography } from '../hooks/useTypography';
 import { useLanguage } from '../hooks/useLanguage';
+import SlideTemplate from '../components/slides/SlideTemplate';
 
 interface PagePlaceholderProps {
   titleKey: string;
@@ -62,6 +63,45 @@ const PagePlaceholder: React.FC<PagePlaceholderProps> = ({
           {/* Test 2: Existing working style */}
           <h2 className="section-title mb-6">
             {t('placeholder.comingSoonExisting')}
+          </h2>
+          <p className={`text-lg text-gray-600 ${getTypographyClasses('body')}`}>
+            {t('placeholder.underConstruction')}
+          </p>
+        </div>
+      </section>
+
+      {/* Slide Template Demo */}
+      <section className="py-20 bg-bg-light">
+        <div className="max-w-6xl mx-auto px-4">
+          <SlideTemplate
+            title={{
+              before: t('placeholder.slideTitleBefore'),
+              highlight: t('placeholder.slideTitleHighlight'),
+            }}
+            description={t('placeholder.slideDescription')}
+            cta={{
+              label: t('placeholder.slideCta'),
+              href: '#',
+              variant: 'primary',
+              ariaLabel: t('placeholder.slideCtaAria'),
+            }}
+            image={{
+              src: '/images/background/Homebackground.png',
+              alt: t('placeholder.slideImageAlt'),
+            }}
+            layout={isRTL ? 'image-end' : 'image-start'}
+            background={{ variant: 'color', className: 'bg-white' }}
+            titleHighlightColorClass="text-icap-accent"
+          />
+        </div>
+      </section>
+
+      {/* Body Text Test Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          {/* H1 Title - Production style */}
+          <h2 className="text-h1 mb-6">
+            {t('placeholder.comingSoonTest')}
           </h2>
           <p className={`text-lg text-gray-600 ${getTypographyClasses('body')}`}>
             {t('placeholder.underConstruction')}
